@@ -1,0 +1,25 @@
+POST http://localhost:3001/api/phones
+Content-Type: application/json
+
+{
+  "name": "",
+  "processor": "",
+  "camera": "",
+  "battery": "",
+  "price": ,
+  "img": "",
+}
+
+###
+
+PUT http://localhost:3001/api/phones/62827419e2e8ab18eab8d508
+Content-Type: application/json
+
+{
+  "name": "Apple iPhone 11 Pro Max",
+  "processor": "Apple A13 Bionic",
+  "camera": "12 MP",
+  "battery": "Li-Ion 3969 mAh",
+  "price": 3500,
+  "img": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-xs-max-new1.jpg"
+}
