@@ -1,5 +1,15 @@
 const phonesRouter = require('express').Router();
 const Phone = require('../models/Phone');
+// const jwt = require('jsonwebtoken');
+
+// // Get token
+// const getToken = req => {
+//   const authorization = req.get('authorization');
+//   if(authorization && authorization.toLowerCase().startsWith('bearer ')) {
+//     return authorization.substring(7);
+//   }
+//   return null;
+// }
 
 // Getting all smartphones
 phonesRouter.get('/', async (request, response) => {

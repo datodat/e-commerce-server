@@ -6,6 +6,8 @@ const mongoose = require('mongoose');
 require('express-async-errors');
 
 const phonesRouter = require('./controllers/phones');
+const usersRouter = require('./controllers/users');
+const loginRouter = require('./controllers/login');
 const middleware = require('./utils/milldeware');
 const logger = require('./utils/logger');
 
@@ -24,6 +26,8 @@ app.use(express.json());
 app.use(middleware.requestLogger);
 
 app.use('/api/phones', phonesRouter);
+app.use('/api/users', usersRouter);
+app.use('/api/login', loginRouter);
 
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);
