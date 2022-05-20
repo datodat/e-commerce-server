@@ -4,12 +4,12 @@ POST http://localhost:3001/api/phones
 Content-Type: application/json
 
 {
-  "name": "",
-  "processor": "",
-  "camera": "",
-  "battery": "",
-  "price": ,
-  "img": ""
+  "name": "Huawei P50 Pro",
+  "processor": "Kirin 9000",
+  "camera": "50 MP",
+  "battery": "Li-Po 4360 mAh",
+  "price": 3200,
+  "img": "https://fdn2.gsmarena.com/vv/bigpic/huawei-p50-pro.jpg"
 }
 
 ### Phones Update
@@ -25,6 +25,10 @@ Content-Type: application/json
   "price": ,
   "img": ""
 }
+
+### Phones Delete
+
+DELETE http://localhost:3001/api/phones/6287f7ad0bf6011924919f4f
 
 ### Users Create
 
@@ -51,7 +55,7 @@ Content-Type: application/json
 
 ### Users Delete
 
-DELETE http://localhost:3001/api/users
+DELETE http://localhost:3001/api/users/62880000792e5efc1681b781
 
 ### Login
 
